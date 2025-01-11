@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'outfit'; /* Choose a name for the font */
+    src: url('/assets/fonts/outfit/static/Outfit-Black.ttf') format('ttf');
+    font-weight: 400; /* Normal weight */
+    font-style: normal; /* Regular style */
+  }
+
+@font-face {
+    font-family: 'young';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('ttf');
+    font-weight: 400; /* Bold weight */
+    font-style: normal;
+}
+  
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    width: 700px;
+    margin: 50px auto;
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", serif;
+}
+
+.content{
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    /* box-shadow: 0 0 1px black; */
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+}
+
+li::marker{
+    color: hsl(14, 55%, 24%);
+    font-weight: bold;
+}
+
+li{
+    padding-left: 10px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+h1, h2{
+    font-family: "Young Serif", serif;
+    font-weight: 200;
+}
+
+.prep{
+    background-color: hsl(330, 100%, 98%);
+    padding: 2px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    line-height: 2;
+    padding: 20px;
+}
+
+.prep h3{
+    color: hsl(332, 51%, 32%);
+    padding: 0 20px;
+    margin: 0;
+}
+
+.prep ul{
+    margin: 0;
+    text-align: left;
+}
+
+h2{
+  color: hsl(14, 55%, 24%);  
+}
+
+.ingredient li{
+    line-height: 2;
+}
+
+
+.instruction ol{
+    /* padding-left: 20px; */
+    margin-bottom: 25px;
+}
+
+.instruction ol li{
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+tr {
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child{
+    border: 0;
+}
+
+td{
+    padding: 10px 30px;
+}
+
+.number{
+    color: hsl(14, 55%, 24%);
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 375px){
+    body{
+        width: 100%;
+        margin: 0;
+    }
+    .content{
+        padding: 0;
+        border-radius: 0;
+    }
+    .main{
+        padding: 25px;
+    }
+    img{
+        border-radius: 0;
+        padding: 0;
+    }
+}
